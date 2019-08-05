@@ -12,7 +12,7 @@ SECURING & MONITORING MODERN WORKLOADS
 
 <img width="200" alt="portfolio_view" src="https://supermariorun.com/assets/img/hero/hero_chara_mario_pc.png">
 
-## Super Mario Finance 
+## "Super Mario Finance" 
 <img width="300" alt="portfolio_view" src="https://cf-images.us-east-1.prod.boltdns.net/v1/static/769341148/800cab56-77ef-477a-9fc3-5ce47c20346f/d8ad628e-c808-4459-a896-8de4ca56f34b/768x433/match/image.jpg">
 
 
@@ -31,3 +31,4 @@ SECURING & MONITORING MODERN WORKLOADS
 ### Proposed Solution 
 
 ## SYSDIG
+<img width="200" alt="portfolio_view" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTz5de0YhxIMgCGCBZk6gebZtVy7yUD7PXoVohE6afyj47b1PCa">
