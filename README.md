@@ -31,4 +31,6 @@ SECURING & MONITORING MODERN WORKLOADS
 ### Proposed Solution 
 
 ## SYSDIG
+<img width="400" alt="portfolio_view" src=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTG_dV2yh5Sh8ukUG2M9-XdaayNZ4gb_zaqAKZ8NdU5pRdegYPMgA">
+
 <img width="200" alt="portfolio_view" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTz5de0YhxIMgCGCBZk6gebZtVy7yUD7PXoVohE6afyj47b1PCa">
