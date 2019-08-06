@@ -5,7 +5,7 @@ SECURING & MONITORING MODERN WORKLOADS
 ### Mission statement "Transformed Digitally" a Journey towards Digital Transformation"
 1. Micro services development 
 2. Infrastructure consolidation 
-3. Agile development methodology in practise 
+3. Agile development methodology in practise CI/CD
 3. Containers Adoption
 4. Building enterprise grade container solution based on Redhat Openshift 3.11
 5. Hybrid cloud strategy
