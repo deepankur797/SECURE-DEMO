@@ -3,7 +3,7 @@ SECURING & MONITORING MODERN WORKLOADS
 
 ## Fictitious Company "Mario Finance" 
 ### Mission statement "Transformed Digitally" a Journey towards Digital Transformation"
-1. Micro services development 
+1. Micro services development JAVA,Spring,NodeJS,.Netcore,Python
 2. Infrastructure consolidation 
 3. Agile development methodology in practise CI/CD
 3. Containers Adoption
