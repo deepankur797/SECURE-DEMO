@@ -15,6 +15,7 @@
 - Nagios Monitoring 
 - ELK
 - SIEM
+- Cloud Bees Jenkins CI/CD
 
 ### Mission statement "Digital Mario Finance" a Journey towards Digital Transformation"
 1. Micro services development spring boot
