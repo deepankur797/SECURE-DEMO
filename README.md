@@ -10,7 +10,7 @@
 ### Company Technology Profile
 - Linux OS (RH 70%,UB 30%)
 - Virtulisation VMware/RHEV
-- On-prim Data center location
+- On-prim Data center
 - Development JAVA, NodeJS, Python
 - Nagios Monitoring 
 - ELK
@@ -18,7 +18,7 @@
 - Cloud Bees Jenkins CI/CD
 
 ### Mission statement "Digital Mario Finance" a Journey towards Digital Transformation"
-1. Micro services development spring boot
+1. Micro services development spring boot, Node JS
 2. Infrastructure consolidation 
 3. Agile development methodology in practise CI/CD
 3. Containers Adoption
