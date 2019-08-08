@@ -21,7 +21,7 @@
 ## "Super Mario Finance gateway solutions" a Journey towards Digital Transformation"
 1. Micro services development spring boot, Node JS
 2. Containers Adoption for consolidating Infra
-3. Agile development methodology in practise CI/CD 
+3. Agile development integration with CI/CD 
 4. Building Enterprise grade container platform based on Redhat Openshift
 5. Hybrid cloud strategy with AWS for Bursting 
 
