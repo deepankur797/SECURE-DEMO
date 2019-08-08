@@ -7,8 +7,8 @@ SECURING & MONITORING MODERN WORKLOADS
 2. Infrastructure consolidation 
 3. Agile development methodology in practise CI/CD
 3. Containers Adoption
-4. Building enterprise grade container solution based on Redhat Openshift 3.11
-5. Hybrid cloud strategy
+4. Building Enterprise grade container platform based on Redhat Openshift
+5. Hybrid cloud strategy with AWS 
 
 <img width="200" alt="portfolio_view" src="https://supermariorun.com/assets/img/hero/hero_chara_mario_pc.png">
 
@@ -17,7 +17,7 @@ SECURING & MONITORING MODERN WORKLOADS
 
 
 ### Problem statement
-1.  Advance UI based Monitoring solution capable to perform data analytics
+1.  UI based Monitoring solution capable to perform data analytics
 2.  Solution having high visibility of kubernetes, container based technologies, CI/CD tools 
 3.  Enterprise grade Security solution for Redhat Openshift (Supported Integration) 
 4.  Unified platform to simplify Day 2 operations 
