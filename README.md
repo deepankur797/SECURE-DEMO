@@ -9,7 +9,7 @@
 
 ### Company Technology Profile
 - Linux OS (RH 70%,UB 30%)
-- Virtulisation VMware/RHEV
+- Virtualisation VMware/RHEV
 - On-prim Data center
 - Development JAVA, NodeJS, Python
 - Nagios Monitoring 
@@ -39,7 +39,7 @@
 6.  Assist in achieving security compliance
 7.  Dedicated TAM services for quick assistance in submitting RFE and handling severity issues
 8.  No Vendor lock-in , Truly open Source solutions 
-10. Supports multi Clouds , Private , Public or Hybrid 
+9. Supports multi Clouds , Private , Public or Hybrid 
 
 
 ### Audience :
@@ -59,9 +59,6 @@
 ## AGENDA
 1. What and Who is Sysdig ?
 2. How do we do that ?
-3. Sysdig Overview 
-4. Sysdig Value proposition
-5. Sysdig Monitorning & Sysdig Security
-6. Sysdig Forensic 
-7. Sysdig Subscription Models 
-
+3. Sysdig Overview and Value proposition
+4. Sysdig Monitoring & Security & Forensic 
+5. Sysdig Subscription Models and Services  
