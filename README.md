@@ -19,11 +19,10 @@
 
 ### Mission statement "Digital Mario Finance" a Journey towards Digital Transformation"
 1. Micro services development spring boot, Node JS
-2. Infrastructure consolidation 
-3. Agile development methodology in practise CI/CD
-3. Containers Adoption
+2. Containers Adoption for consolidating Infra
+3. Agile development methodology in practise CI/CD 
 4. Building Enterprise grade container platform based on Redhat Openshift
-5. Hybrid cloud strategy with AWS 
+5. Hybrid cloud strategy with AWS for Bursting 
 
 <img width="200" alt="portfolio_view" src="https://supermariorun.com/assets/img/hero/hero_chara_mario_pc.png">
 
