@@ -1,8 +1,7 @@
-# SECURE-DEMO
-SECURING & MONITORING MODERN WORKLOADS 
+# DEMO MONITORING and SECURING MODERN WORKLOADS
 
 ## Fictitious Company "Mario Finance" 
-### Mission statement "Transformed Digitally" a Journey towards Digital Transformation"
+### Mission statement "Digital Mario Finance" a Journey towards Digital Transformation"
 1. Micro services development JAVA,Spring,NodeJS,.Netcore,Python
 2. Infrastructure consolidation 
 3. Agile development methodology in practise CI/CD
@@ -17,7 +16,7 @@ SECURING & MONITORING MODERN WORKLOADS
 
 
 ### Problem statement
-1.  UI based Monitoring solution capable to perform data analytics
+1.  UI based Monitoring solution
 2.  Solution having high visibility of kubernetes, container based technologies, CI/CD tools 
 3.  Enterprise grade Security solution for Redhat Openshift (Supported Integration) 
 4.  Unified platform to simplify Day 2 operations 
