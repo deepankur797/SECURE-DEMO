@@ -45,8 +45,8 @@ SECURING & MONITORING MODERN WORKLOADS
 ## AGENDA
 1. What and Who is Sysdig ?
 2. How do we do that ?
-3. Sysdig Value proposition
-4. Sysdig Overview 
+3. Sysdig Overview 
+4. Sysdig Value proposition
 5. Sysdig Monitorning & Sysdig Security
 6. Sysdig Forensic 
 7. Sysdig Subscription Models 
