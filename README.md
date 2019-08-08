@@ -47,8 +47,7 @@ SECURING & MONITORING MODERN WORKLOADS
 2. How do we do that ?
 3. Sysdig Value proposition
 4. Sysdig Overview 
-5. Sysdig Monitorning 
-6. Sysdig Security
-7. Sysdig Forensic 
-8. Sysdig Models 
-9. Sysdig Subscription 
+5. Sysdig Monitorning & Sysdig Security
+6. Sysdig Forensic 
+7. Sysdig Subscription Models 
+
