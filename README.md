@@ -8,7 +8,7 @@
 
 
 ### Company Technology Profile
-- Linux OS (RH,UB)
+- Linux OS (RH 70%,UB 30%)
 - Virtulisation VMware/RHEV
 - On-prim Data center location
 - Development JAVA, NodeJS, Python
