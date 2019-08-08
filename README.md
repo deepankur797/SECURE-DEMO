@@ -1,8 +1,23 @@
 # DEMO MONITORING and SECURING MODERN WORKLOADS
 
-## Fictitious Company "Mario Finance" 
+## Fictitious Company "Mario Finance gateway solutions" 
+### Company Business Profile
+- Unicorn payment solution company
+- Real time payments gateway solutions to Banks , Governments, Corporate and Aggregators 
+- 1000+ customers
+
+
+### Company Technology Profile
+- Linux OS (RH,UB)
+- Virtulisation VMware/RHEV
+- On-prim Data center location
+- Development JAVA, NodeJS, Python
+- Nagios Monitoring 
+- ELK
+- SIEM
+
 ### Mission statement "Digital Mario Finance" a Journey towards Digital Transformation"
-1. Micro services development JAVA,Spring,NodeJS,.Netcore,Python
+1. Micro services development spring boot
 2. Infrastructure consolidation 
 3. Agile development methodology in practise CI/CD
 3. Containers Adoption
@@ -11,7 +26,7 @@
 
 <img width="200" alt="portfolio_view" src="https://supermariorun.com/assets/img/hero/hero_chara_mario_pc.png">
 
-## "Super Mario Finance" 
+## "Super Mario Financ gateway solutions" 
 <img width="300" alt="portfolio_view" src="https://cf-images.us-east-1.prod.boltdns.net/v1/static/769341148/800cab56-77ef-477a-9fc3-5ce47c20346f/d8ad628e-c808-4459-a896-8de4ca56f34b/768x433/match/image.jpg">
 
 
