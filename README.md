@@ -63,3 +63,41 @@
 3. Sysdig Overview and Value proposition
 4. Sysdig Monitoring & Security & Forensic 
 5. Sysdig Subscription Models and Services  
+
+
+
+## DEMO BEGINS 
+
+Sysdig Monitoring 
+
+- Agent overview 
+  - Unified daemon set 
+  - Less resource savvy, About 2 % of total CPU/Mem
+  
+- Deployment overview 
+  - SaaS
+  - On-Prim 
+  
+  
+  Module 1
+  Explore - Grouping 
+  
+  Module 2 
+  
+  
+  
+  
+  
+
+Sysdig Secure 
+
+Unified agent Deamonset 
+Offering - 
+SAAS 
+On-prim
+
+
+1. 
+
+
+
