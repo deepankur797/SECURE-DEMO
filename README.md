@@ -79,9 +79,16 @@ Sysdig Monitoring
   - On-Prim 
   
   
-  Module 1
-  Explore - Grouping 
-  
+ 
+Module 1
+EXPLORE - GROUPING / SCOPING /SEGMENTATION 
+  - Default grouping 
+  - Custom 
+    
+   Basic Metrics table view :
+   CPU/MEM/FS/NETWORK
+
+Select individual item and view the dash board list 
   Module 2 
   
   
