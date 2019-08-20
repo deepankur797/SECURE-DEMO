@@ -80,16 +80,41 @@ Sysdig Monitoring
   
   
  
-Module 1
-EXPLORE - GROUPING / SCOPING /SEGMENTATION 
+Module 1 EXPLORE - GROUPING / SCOPING /SEGMENTATION 
+---------------------------------------------------
   - Default grouping 
-  - Custom 
-    
-   Basic Metrics table view :
-   CPU/MEM/FS/NETWORK
+  - Custom grouping
+    Basic Metrics table view :
+    CPU/MEM/FS/NETWORK
+  * Default understanding of orchestration layer 
+  
+  
+DASH BOARDS
+-----------
+- HOST & CONTAINER EXPLORE mycustom 
+  - Memory
+  - Sysdig 
+  
+- KUBERNETES (explore - services/mycustom)
 
-Select individual item and view the dash board list 
-  Module 2 
+- NETWORK (explore - mycustom) 
+
+- SERVICES (explore - services)
+  - CAST SOME VOTE ON VOTEAPP
+  - GOLDEN RULE (CHANGE TO SERVICES IN EXPLORE)
+
+- TOPOLOGY (explore - services)
+  - CPU
+  - Network 
+  - Response
+  
+- APPLICATIONS (explore - mycustom)
+  - ALL
+  
+- COMPLIANCE
+  - Docker
+  - K8
+
   
   
   
