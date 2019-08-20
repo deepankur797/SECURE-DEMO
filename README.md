@@ -151,19 +151,13 @@ MODULE-4 Events
 
 MODULE-5 Captures
 -----------------    
+- Sysdig Inspect
 
-  
-  
+MODULE-6 TEAMS
+--------------    
 
-Sysdig Secure 
+- Teamapple overview 
 
-Unified agent Deamonset 
-Offering - 
-SAAS 
-On-prim
-
-
-1. 
 
 
 
