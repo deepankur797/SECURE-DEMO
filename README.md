@@ -80,7 +80,7 @@ Sysdig Monitoring
   
   
  
-Module 1 EXPLORE - GROUPING / SCOPING /SEGMENTATION 
+MODULE-1 EXPLORE - GROUPING / SCOPING /SEGMENTATION 
 ---------------------------------------------------
   - Default grouping 
   - Custom grouping
@@ -89,7 +89,7 @@ Module 1 EXPLORE - GROUPING / SCOPING /SEGMENTATION
   * Default understanding of orchestration layer 
   
   
-DASH BOARDS
+MODULE-2 DASH BOARDS
 -----------
 - HOST & CONTAINER EXPLORE mycustom 
   - Memory
