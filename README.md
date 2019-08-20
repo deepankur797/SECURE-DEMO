@@ -153,10 +153,14 @@ MODULE-5 Captures
 -----------------    
 - Sysdig Inspect
 
-MODULE-6 TEAMS
---------------    
+MODULE-6 Settings 
+-----------------
 
-- Teamapple overview 
+- Users
+- Teams and Roles
+- Notification Channels
+- Authentication
+
 
 
 
