@@ -80,17 +80,19 @@ Sysdig Monitoring
   
   
  
-MODULE-1 EXPLORE - GROUPING / SCOPING /SEGMENTATION 
+MODULE-1A EXPLORE - GROUPING / SCOPING /SEGMENTATION 
 ---------------------------------------------------
-  - Default grouping 
+ 
+ - Default grouping 
   - Custom grouping
     Basic Metrics table view :
     CPU/MEM/FS/NETWORK
   * Default understanding of orchestration layer 
   
   
-MODULE-2 DASH BOARDS
------------
+MODULE-1B DASH BOARDS EXPLORE
+----------------------------
+
 - HOST & CONTAINER EXPLORE mycustom 
   - Memory
   - Sysdig 
@@ -114,10 +116,42 @@ MODULE-2 DASH BOARDS
 - COMPLIANCE
   - Docker
   - K8
+- METRICS 
+  - App checks 
+  - Kubernetes 
+  - Host (JMX/StatsD)
+  - System 
+  - StatsD 
 
-  
-  
-  
+
+
+MODULE-2 DASH BOARDS
+--------------------
+
+- Custom Dashboards 
+
+
+MODULE-3 Alerts 
+---------------
+- DDOSATTACK
+- Alert creation 
+  - Alert Types 
+    - Down
+    - metrics
+    - Events
+    - Anomaly 
+    
+MODULE-4 Events
+---------------    
+- DDOSATTACK Event
+- Event Scoping 
+- Event Severity (High, Medium, Low , Info)
+- Event Types & filter (Alert, Container,Kubernetes)
+- Event Status (Triggered,Resolved,Acknowledge,Unack)
+
+MODULE-5 Captures
+-----------------    
+
   
   
 
