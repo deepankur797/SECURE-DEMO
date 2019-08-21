@@ -162,6 +162,8 @@ MODULE-6 Settings
 - Authentication
 
 
-
+# SECURE 
+Evaluated against multiple vulnerability databases 
+- Centos, Debian, Ruby, Red Hat, Ubuntu, Python, CVE, NIST, NPM, Alpine NVD
 
 
