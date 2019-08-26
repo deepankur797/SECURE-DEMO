@@ -118,3 +118,11 @@ Evaluated against multiple vulnerability databases
 - Centos, Debian, Ruby, Red Hat, Ubuntu, Python, CVE, NIST, NPM, Alpine NVD
 
 https://sysdig.atlassian.net/wiki/spaces/PROD/pages/864813638/Security+at+Sysdig
+
+
+
+
+Agent installation Kubernetes:
+
+Kernel header 
+apt-get -y install linux-headers-$(uname -r)
