@@ -1,0 +1,1 @@
+echo "docker.io/giriraj789/webdev:v1 /var/jenkins_home/workspace/sysdigscan/Dockerfile " > sysdig_secure_images
