@@ -1,0 +1,10 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<com.sysdig.jenkins.plugins.sysdig.AnchoreBuilder_-DescriptorImpl plugin="sysdig-secure@1.0.19.3">
+  <debug>false</debug>
+  <engineurl>https://secure.sysdig.com/api/scanning/v1/anchore</engineurl>
+  <engineuser>3f9f8829-0a54-4d14-ab61-23ed39a35e0b</engineuser>
+  <enginepass>{AQAAABAAAAAQo7HaE3TcC51iARPGHmdR2W4Rebss+RraEdQIWNkoUZw=}</enginepass>
+  <engineverify>true</engineverify>
+  <useSudo>false</useSudo>
+  <enabled>false</enabled>
+</com.sysdig.jenkins.plugins.sysdig.AnchoreBuilder_-DescriptorImpl>

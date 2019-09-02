@@ -1,0 +1,260 @@
+Started by user [8mha:////4BMtx3IZ7BYf5/mWQAWzMypJ/LvTgOslNt9Y4GxRNVviAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0madmin
+Running as SYSTEM
+Building in workspace /var/jenkins_home/workspace/sysdigscan
+No credentials specified
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/learnbyseven/apachewebserver.git # timeout=10
+Fetching upstream changes from https://github.com/learnbyseven/apachewebserver.git
+ > git --version # timeout=10
+ > git fetch --tags --progress https://github.com/learnbyseven/apachewebserver.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 18249c54b7c7cc2e3db0abfdea1c66820ff5d308 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 18249c54b7c7cc2e3db0abfdea1c66820ff5d308
+Commit message: "Update Dockerfile"
+ > git rev-list --no-walk 18249c54b7c7cc2e3db0abfdea1c66820ff5d308 # timeout=10
+Docker Build
+Docker Build: building image at path /var/jenkins_home/workspace/sysdigscan
+Step 1/6 : FROM	centos:7
+
+
+ ---> 67fa590cfc1c
+
+Step 2/6 : RUN 	yum install -y httpd && yum clean all -y &&     	sed -i 's/Listen 80/Listen 8080/' /etc/httpd/conf/httpd.conf && 	chmod -R a+rwx /run/httpd /etc/httpd/logs
+
+
+ ---> Running in b05f32e7d8d2
+
+Loaded plugins: fastestmirror, ovl
+
+Determining fastest mirrors
+
+ * base: centos.excellmedia.net
+
+ * extras: centos.excellmedia.net
+
+ * updates: centos.excellmedia.net
+
+Resolving Dependencies
+
+--> Running transaction check
+
+---> Package httpd.x86_64 0:2.4.6-89.el7.centos.1 will be installed
+
+--> Processing Dependency: httpd-tools = 2.4.6-89.el7.centos.1 for package: httpd-2.4.6-89.el7.centos.1.x86_64
+
+--> Processing Dependency: system-logos >= 7.92.1-1 for package: httpd-2.4.6-89.el7.centos.1.x86_64
+
+--> Processing Dependency: /etc/mime.types for package: httpd-2.4.6-89.el7.centos.1.x86_64
+
+--> Processing Dependency: libaprutil-1.so.0()(64bit) for package: httpd-2.4.6-89.el7.centos.1.x86_64
+
+--> Processing Dependency: libapr-1.so.0()(64bit) for package: httpd-2.4.6-89.el7.centos.1.x86_64
+
+--> Running transaction check
+
+---> Package apr.x86_64 0:1.4.8-3.el7_4.1 will be installed
+
+---> Package apr-util.x86_64 0:1.5.2-6.el7 will be installed
+
+---> Package centos-logos.noarch 0:70.0.6-3.el7.centos will be installed
+
+---> Package httpd-tools.x86_64 0:2.4.6-89.el7.centos.1 will be installed
+
+---> Package mailcap.noarch 0:2.1.41-2.el7 will be installed
+
+--> Finished Dependency Resolution
+
+
+Dependencies Resolved
+
+
+================================================================================
+ Package           Arch        Version                       Repository    Size
+================================================================================
+Installing:
+ httpd             x86_64      2.4.6-89.el7.centos.1         updates      2.7 M
+Installing for dependencies:
+ apr               x86_64      1.4.8-3.el7_4.1               base         103 k
+ apr-util          x86_64      1.5.2-6.el7                   base          92 k
+ centos-logos      noarch      70.0.6-3.el7.centos           base          21 M
+ httpd-tools       x86_64      2.4.6-89.el7.centos.1         updates       91 k
+ mailcap           noarch      2.1.41-2.el7                  base          31 k
+
+Transaction Summary
+================================================================================
+Install  1 Package (+5 Dependent packages)
+
+
+Total download size: 24 M
+
+Installed size: 31 M
+
+Downloading packages:
+
+[91mwarning: [0m
+Public key for httpd-tools-2.4.6-89.el7.centos.1.x86_64.rpm is not installed
+
+[91m/var/cache/yum/x86_64/7/updates/packages/httpd-tools-2.4.6-89.el7.centos.1.x86_64.rpm: Header V3 RSA/SHA256 Signature, key ID f4a80eb5: NOKEY
+[0m
+Public key for apr-1.4.8-3.el7_4.1.x86_64.rpm is not installed
+
+--------------------------------------------------------------------------------
+
+Total                                              2.8 MB/s |  24 MB  00:08     
+
+Retrieving key from file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-7
+
+[91mImporting GPG key 0xF4A80EB5:
+ Userid     : "CentOS-7 Key (CentOS 7 Official Signing Key) <security@centos.org>"
+ Fingerprint: 6341 ab27 53d7 8a78 a7c2 7bb1 24c6 a8a7 f4a8 0eb5
+ Package    : centos-release-7-6.1810.2.el7.centos.x86_64 (@CentOS)
+ From       : /etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-7
+[0m
+Running transaction check
+
+Running transaction test
+
+Transaction test succeeded
+
+Running transaction
+
+  Installing : apr-1.4.8-3.el7_4.1.x86_64                                   1/6
+ 
+  Installing : apr-util-1.5.2-6.el7.x86_64                                  2/6
+ 
+  Installing : httpd-tools-2.4.6-89.el7.centos.1.x86_64                     3/6
+ 
+  Installing : centos-logos-70.0.6-3.el7.centos.noarch                      4/6
+ 
+  Installing : mailcap-2.1.41-2.el7.noarch                                  5/6
+ 
+  Installing : httpd-2.4.6-89.el7.centos.1.x86_64                           6/6
+ 
+  Verifying  : httpd-2.4.6-89.el7.centos.1.x86_64                           1/6
+ 
+  Verifying  : httpd-tools-2.4.6-89.el7.centos.1.x86_64                     2/6
+ 
+  Verifying  : mailcap-2.1.41-2.el7.noarch                                  3/6
+ 
+  Verifying  : apr-util-1.5.2-6.el7.x86_64                                  4/6
+ 
+  Verifying  : apr-1.4.8-3.el7_4.1.x86_64                                   5/6
+ 
+  Verifying  : centos-logos-70.0.6-3.el7.centos.noarch                      6/6
+ 
+
+Installed:
+  httpd.x86_64 0:2.4.6-89.el7.centos.1                                          
+
+Dependency Installed:
+  apr.x86_64 0:1.4.8-3.el7_4.1                                                  
+  apr-util.x86_64 0:1.5.2-6.el7                                                 
+  centos-logos.noarch 0:70.0.6-3.el7.centos                                     
+  httpd-tools.x86_64 0:2.4.6-89.el7.centos.1                                    
+  mailcap.noarch 0:2.1.41-2.el7                                                 
+
+
+Complete!
+
+Loaded plugins: fastestmirror, ovl
+
+Cleaning repos: base extras updates
+
+Cleaning up list of fastest mirrors
+
+Removing intermediate container b05f32e7d8d2
+
+ ---> 60783f0ee732
+
+Step 3/6 : EXPOSE 8080
+
+
+ ---> Running in c72fc0d58500
+
+Removing intermediate container c72fc0d58500
+
+ ---> 1900cd9a0a8c
+
+Step 4/6 : EXPOSE 8082
+
+
+ ---> Running in 6ee51570a100
+
+Removing intermediate container 6ee51570a100
+
+ ---> 5300e767f132
+
+Step 5/6 : ENTRYPOINT	["/usr/sbin/httpd"]
+
+
+ ---> Running in 1c3a27a68a1e
+
+Removing intermediate container 1c3a27a68a1e
+
+ ---> ebbccc8ae522
+
+Step 6/6 : CMD		["-DFOREGROUND"]
+
+
+ ---> Running in c5a77b5e00e6
+
+Removing intermediate container c5a77b5e00e6
+
+ ---> 4574fff06368
+
+Successfully built 4574fff06368
+
+Tagging built image with docker.io/giriraj789/webdev:v1
+Docker Build Response : 4574fff06368
+Pushing [docker.io/giriraj789/webdev:v1]
+The push refers to repository [docker.io/giriraj789/webdev]
+e9c1693218c3: Preparing
+877b494a9f30: Preparing
+e9c1693218c3: Pushing [>                                                  ]  533.5kB/55.68MB
+e9c1693218c3: Pushing [>                                                  ]  1.074MB/55.68MB
+e9c1693218c3: Pushing [=>                                                 ]  1.605MB/55.68MB
+e9c1693218c3: Pushing [=>                                                 ]   2.13MB/55.68MB
+e9c1693218c3: Pushing [==>                                                ]  2.658MB/55.68MB
+e9c1693218c3: Pushing [===>                                               ]  3.736MB/55.68MB
+e9c1693218c3: Pushing [====>                                              ]  4.799MB/55.68MB
+e9c1693218c3: Pushing [====>                                              ]  5.357MB/55.68MB
+877b494a9f30: Mounted from library/centos
+e9c1693218c3: Pushing [=====>                                             ]  6.471MB/55.68MB
+e9c1693218c3: Pushing [======>                                            ]  7.585MB/55.68MB
+e9c1693218c3: Pushing [=======>                                           ]  8.699MB/55.68MB
+e9c1693218c3: Pushing [========>                                          ]  9.256MB/55.68MB
+e9c1693218c3: Pushing [=========>                                         ]  10.37MB/55.68MB
+e9c1693218c3: Pushing [=========>                                         ]  10.93MB/55.68MB
+e9c1693218c3: Pushing [==========>                                        ]  12.03MB/55.68MB
+e9c1693218c3: Pushing [===========>                                       ]  13.14MB/55.68MB
+e9c1693218c3: Pushing [============>                                      ]  14.26MB/55.68MB
+e9c1693218c3: Pushing [=============>                                     ]  15.37MB/55.68MB
+e9c1693218c3: Pushing [==============>                                    ]  16.49MB/55.68MB
+e9c1693218c3: Pushing [===============>                                   ]   17.6MB/55.68MB
+e9c1693218c3: Pushing [================>                                  ]  18.69MB/55.68MB
+e9c1693218c3: Pushing [=================>                                 ]  19.79MB/55.68MB
+e9c1693218c3: Pushing [==================>                                ]   20.9MB/55.68MB
+e9c1693218c3: Pushing [===================>                               ]  22.01MB/55.68MB
+e9c1693218c3: Pushing [====================>                              ]   23.1MB/55.68MB
+e9c1693218c3: Pushing [======================>                            ]  24.69MB/55.68MB
+e9c1693218c3: Pushing [========================>                          ]  26.84MB/55.68MB
+e9c1693218c3: Pushing [==========================>                        ]  29.01MB/55.68MB
+e9c1693218c3: Pushing [===========================>                       ]  30.63MB/55.68MB
+e9c1693218c3: Pushing [============================>                      ]  31.71MB/55.68MB
+e9c1693218c3: Pushing [=============================>                     ]   32.8MB/55.68MB
+e9c1693218c3: Pushing [==============================>                    ]  34.46MB/55.68MB
+e9c1693218c3: Pushing [==================================>                ]  38.34MB/55.68MB
+e9c1693218c3: Pushing [====================================>              ]  41.12MB/55.68MB
+e9c1693218c3: Pushing [=======================================>           ]  43.91MB/55.68MB
+e9c1693218c3: Pushing [=========================================>         ]  46.69MB/55.68MB
+e9c1693218c3: Pushing [============================================>      ]  50.04MB/55.68MB
+e9c1693218c3: Pushing [===============================================>   ]  52.81MB/55.68MB
+e9c1693218c3: Pushing [==================================================>]  56.13MB
+e9c1693218c3: Pushing [==================================================>]  56.38MB
+e9c1693218c3: Pushed
+v1: digest: sha256:1ed1f58a7ec156d91effd3e188dc4598a005ca81cb293df6962bd7bbf344a303 size: 741
+Docker Build Done
+Finished: SUCCESS

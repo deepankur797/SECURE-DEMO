@@ -1,0 +1,99 @@
+Started by user [8mha:////4BMtx3IZ7BYf5/mWQAWzMypJ/LvTgOslNt9Y4GxRNVviAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0madmin
+Running as SYSTEM
+Building in workspace /var/jenkins_home/workspace/sysdigscan
+No credentials specified
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/learnbyseven/apachewebserver.git # timeout=10
+Fetching upstream changes from https://github.com/learnbyseven/apachewebserver.git
+ > git --version # timeout=10
+ > git fetch --tags --progress https://github.com/learnbyseven/apachewebserver.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 18249c54b7c7cc2e3db0abfdea1c66820ff5d308 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 18249c54b7c7cc2e3db0abfdea1c66820ff5d308
+Commit message: "Update Dockerfile"
+ > git rev-list --no-walk 18249c54b7c7cc2e3db0abfdea1c66820ff5d308 # timeout=10
+Docker Build
+Docker Build: building image at path /var/jenkins_home/workspace/sysdigscan
+Step 1/6 : FROM	centos:7
+
+
+ ---> 67fa590cfc1c
+
+Step 2/6 : RUN 	yum install -y httpd && yum clean all -y &&     	sed -i 's/Listen 80/Listen 8080/' /etc/httpd/conf/httpd.conf && 	chmod -R a+rwx /run/httpd /etc/httpd/logs
+
+
+ ---> Using cache
+
+ ---> 60783f0ee732
+
+Step 3/6 : EXPOSE 8080
+
+
+ ---> Using cache
+
+ ---> 1900cd9a0a8c
+
+Step 4/6 : EXPOSE 8082
+
+
+ ---> Using cache
+
+ ---> 5300e767f132
+
+Step 5/6 : ENTRYPOINT	["/usr/sbin/httpd"]
+
+
+ ---> Using cache
+
+ ---> ebbccc8ae522
+
+Step 6/6 : CMD		["-DFOREGROUND"]
+
+
+ ---> Using cache
+
+ ---> 4574fff06368
+
+Successfully built 4574fff06368
+
+Tagging built image with docker.io/giriraj789/webdev:v1
+Docker Build Response : 4574fff06368
+Pushing [docker.io/giriraj789/webdev:v1]
+The push refers to repository [docker.io/giriraj789/webdev]
+e9c1693218c3: Preparing
+877b494a9f30: Preparing
+e9c1693218c3: Layer already exists
+877b494a9f30: Layer already exists
+v1: digest: sha256:1ed1f58a7ec156d91effd3e188dc4598a005ca81cb293df6962bd7bbf344a303 size: 741
+Docker Build Done
+[sysdigscan] $ /bin/sh -xe /tmp/jenkins3171567742765084348.sh
++ echo docker.io/giriraj789/webdev:v1 /var/jenkins_home/workspace/sysdigscan/Dockerfile 
+2019-08-22T20:04:41.719 INFO   AnchoreWorker   Jenkins version: 2.190
+2019-08-22T20:04:41.720 INFO   AnchoreWorker   Sysdig Secure Container Image Scanner Plugin version: 1.0.19.3
+2019-08-22T20:04:41.720 INFO   AnchoreWorker   [global] debug: false
+2019-08-22T20:04:41.720 INFO   AnchoreWorker   [global] enginemode: anchoreengine
+2019-08-22T20:04:41.720 INFO   AnchoreWorker   [build] engineurl: https://secure.sysdig.com/api/scanning/v1/anchore
+2019-08-22T20:04:41.720 INFO   AnchoreWorker   [build] engineuser: 3f9f8829-0a54-4d14-ab61-23ed39a35e0b
+2019-08-22T20:04:41.720 INFO   AnchoreWorker   [build] enginepass: ****
+2019-08-22T20:04:41.721 INFO   AnchoreWorker   [build] engineverify: false
+2019-08-22T20:04:41.721 INFO   AnchoreWorker   [build] name: sysdig_secure_images
+2019-08-22T20:04:41.721 INFO   AnchoreWorker   [build] engineRetries: 300
+2019-08-22T20:04:41.721 INFO   AnchoreWorker   [build] policyBundleId: 
+2019-08-22T20:04:41.721 INFO   AnchoreWorker   [build] bailOnFail: true
+2019-08-22T20:04:41.721 INFO   AnchoreWorker   [build] bailOnPluginFail: true
+2019-08-22T20:04:41.723 INFO   SysdigSecurePlugin Build override set for Sysdig Secure Engine verify SSL
+2019-08-22T20:04:41.731 INFO   AnchoreWorker   Submitting docker.io/giriraj789/webdev:v1 for analysis
+2019-08-22T20:04:44.923 INFO   AnchoreWorker   Analysis request accepted, received image digest sha256:1ed1f58a7ec156d91effd3e188dc4598a005ca81cb293df6962bd7bbf344a303
+2019-08-22T20:04:44.924 INFO   AnchoreWorker   Waiting for analysis of docker.io/giriraj789/webdev:v1, polling status periodically
+2019-08-22T20:06:15.214 INFO   AnchoreWorker   Completed analysis and processed policy evaluation result
+2019-08-22T20:06:15.215 INFO   AnchoreWorker   Policy evaluation summary for docker.io/giriraj789/webdev:v1 - stop: 1 (+0 whitelisted), warn: 0 (+0 whitelisted), go: 0 (+0 whitelisted), final: stop
+2019-08-22T20:06:15.216 INFO   AnchoreWorker   Sysdig Secure Container Image Scanner Plugin step result - FAIL
+2019-08-22T20:06:15.216 INFO   AnchoreWorker   Querying vulnerability listing for docker.io/giriraj789/webdev:v1
+Archiving artifacts
+2019-08-22T20:06:17.005 WARN   SysdigSecurePlugin Failing Sysdig Secure Container Image Scanner Plugin step due to final result FAIL
+2019-08-22T20:06:17.007 INFO   SysdigSecurePlugin Completed Sysdig Secure Container Image Scanner step
+ERROR: Failing Sysdig Secure Container Image Scanner Plugin step due to final result FAIL
+Finished: FAILURE

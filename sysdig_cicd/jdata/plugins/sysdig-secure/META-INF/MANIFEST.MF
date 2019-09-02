@@ -1,0 +1,22 @@
+Manifest-Version: 1.0
+Archiver-Version: Plexus Archiver
+Created-By: Apache Maven
+Built-By: alfred
+Build-Jdk: 1.8.0_191
+Extension-Name: sysdig-secure
+Specification-Title: Integrates Jenkins with the Sysdig Secure Image S
+ canner to scan Docker images
+Implementation-Title: sysdig-secure
+Implementation-Version: 1.0.19.3
+Group-Id: org.jenkins-ci.plugins
+Short-Name: sysdig-secure
+Long-Name: Sysdig Secure Container Image Scanner Plugin
+Url: https://wiki.jenkins.io/display/JENKINS/Sysdig+Secure+Jenkins+Plu
+ gin
+Minimum-Java-Version: 1.8
+Plugin-Version: 1.0.19.3
+Hudson-Version: 2.60.3
+Jenkins-Version: 2.60.3
+Plugin-Dependencies: credentials:2.1.18,structs:1.17
+Plugin-Developers: Sysdig Secure:sysdig-secure:info@sysdig.com
+

@@ -1,0 +1,71 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<project>
+  <actions/>
+  <description>sysdig scan</description>
+  <keepDependencies>false</keepDependencies>
+  <properties/>
+  <scm class="hudson.plugins.git.GitSCM" plugin="git@3.12.0">
+    <configVersion>2</configVersion>
+    <userRemoteConfigs>
+      <hudson.plugins.git.UserRemoteConfig>
+        <url>https://github.com/learnbyseven/apachewebserver.git</url>
+      </hudson.plugins.git.UserRemoteConfig>
+    </userRemoteConfigs>
+    <branches>
+      <hudson.plugins.git.BranchSpec>
+        <name>*/master</name>
+      </hudson.plugins.git.BranchSpec>
+    </branches>
+    <doGenerateSubmoduleConfigurations>false</doGenerateSubmoduleConfigurations>
+    <submoduleCfg class="list"/>
+    <extensions/>
+  </scm>
+  <canRoam>true</canRoam>
+  <disabled>false</disabled>
+  <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
+  <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
+  <triggers/>
+  <concurrentBuild>false</concurrentBuild>
+  <builders>
+    <com.nirima.jenkins.plugins.docker.builder.DockerBuilderPublisher plugin="docker-plugin@1.1.7">
+      <dockerFileDirectory>/var/jenkins_home/workspace/sysdigscan</dockerFileDirectory>
+      <fromRegistry plugin="docker-commons@1.15"/>
+      <tags>
+        <string>docker.io/giriraj789/webdev:v1</string>
+      </tags>
+      <pushOnSuccess>true</pushOnSuccess>
+      <pushCredentialsId>giriraj789</pushCredentialsId>
+      <cleanImages>false</cleanImages>
+      <cleanupWithJenkinsJobDelete>false</cleanupWithJenkinsJobDelete>
+      <cloud>docker</cloud>
+    </com.nirima.jenkins.plugins.docker.builder.DockerBuilderPublisher>
+    <hudson.tasks.Shell>
+      <command>echo &quot;docker.io/giriraj789/webdev:v1 /var/jenkins_home/workspace/sysdigscan/Dockerfile &quot; &gt; sysdig_secure_images</command>
+    </hudson.tasks.Shell>
+    <com.sysdig.jenkins.plugins.sysdig.AnchoreBuilder plugin="sysdig-secure@1.0.19.3">
+      <name>sysdig_secure_images</name>
+      <policyName>sysdig_secure_policy</policyName>
+      <globalWhiteList>sysdig_secure_global_whitelist</globalWhiteList>
+      <anchoreioUser></anchoreioUser>
+      <anchoreioPass></anchoreioPass>
+      <userScripts>sysdig_secure_user_scripts</userScripts>
+      <engineRetries>300</engineRetries>
+      <bailOnFail>true</bailOnFail>
+      <bailOnWarn>false</bailOnWarn>
+      <bailOnPluginFail>true</bailOnPluginFail>
+      <doCleanup>false</doCleanup>
+      <useCachedBundle>true</useCachedBundle>
+      <policyEvalMethod>plainfile</policyEvalMethod>
+      <bundleFileOverride>sysdig_secure_policy_bundle.json</bundleFileOverride>
+      <inputQueries/>
+      <policyBundleId></policyBundleId>
+      <annotations/>
+      <engineurl></engineurl>
+      <engineCredentialsId></engineCredentialsId>
+      <engineverify>false</engineverify>
+      <isEngineverifyOverrride>true</isEngineverifyOverrride>
+    </com.sysdig.jenkins.plugins.sysdig.AnchoreBuilder>
+  </builders>
+  <publishers/>
+  <buildWrappers/>
+</project>
