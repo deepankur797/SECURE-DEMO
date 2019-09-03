@@ -1,0 +1,28 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: logtest
+  namespace: logtest
+  labels:
+    app: logtest
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: logtest
+  template:
+    metadata:
+      labels:
+        app: logtest
+    spec:
+      containers:
+      - name: logtest
+        image: docker.io/giriraj789/logtest:v1
+        resources:
+          requests:
+            memory: "100Mi"
+            cpu: "200m"
+          limits:
+            memory: "200Mi"
+            cpu: "300m"
+
