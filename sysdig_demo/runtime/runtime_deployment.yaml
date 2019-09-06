@@ -1,23 +1,23 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: airroute
+  name: runtime
   namespace: runtime
   labels:
-    app: airroute
+    app: runtime
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: airroute
+      app: runtime
   template:
     metadata:
       labels:
-        app: airroute
+        app: runtime
     spec:
       containers:
-      - name: airroute
-        image: docker.io/giriraj789/airroute:v1
+      - name: runtime
+        image: docker.io/giriraj789/webdev:v1
         resources:
           requests:
             memory: "100Mi"
@@ -26,19 +26,19 @@ spec:
             memory: "200Mi"
             cpu: "300m"
         ports:
-        - containerPort: 8080
+        - containerPort: 8082
 ---
 apiVersion: v1
 kind: Service
 metadata:
-  name: airroute
+  name: runtime
   namespace: runtime
 spec:
   selector:
-    app: airroute
+    app: runtime
   type: NodePort
   ports:
     - protocol: TCP
-      port: 8080
+      port: 8082
       nodePort: 32400
       

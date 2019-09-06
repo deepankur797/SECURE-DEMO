@@ -1,0 +1,12 @@
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: sysdig-mysql-disk
+spec:
+  accessModes:
+  - ReadWriteMany
+  storageClassName: mysql-storage
+  resources:
+    requests:
+      storage: 15Gi

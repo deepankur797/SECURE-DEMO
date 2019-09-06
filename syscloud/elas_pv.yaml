@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: elas-pv
+  namespace: kube-system
+spec:
+  accessModes:
+  - ReadWriteOnce
+  capacity:
+    storage: 50Gi
+  nfs:
+    path: /opt/share/elas
+    server: 192.168.54.140
+  persistentVolumeReclaimPolicy: Retain
+  storageClassName: elas-storage

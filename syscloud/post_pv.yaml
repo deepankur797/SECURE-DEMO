@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: post-pv
+  namespace: kube-system
+spec:
+  accessModes:
+  - ReadWriteOnce
+  capacity:
+    storage: 60Gi
+  nfs:
+    path: /opt/share/post
+    server: 192.168.54.140
+  persistentVolumeReclaimPolicy: Retain
+  storageClassName: post-storage
