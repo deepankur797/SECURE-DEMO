@@ -20,8 +20,10 @@ systemctl restart docker
 swapoff -a
 #vi fastab also
 kubeadm init --pod-network-cidr=192.168.0.0/16 > /kube_join.txt
+kubeadm init --pod-network-cidr=10.244.0.0/16 --apiserver-bind-port=6444 > /kube_join.txt
 mkdir -p $HOME/.kube
 cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
 sudo chown $(id -u):$(id -g) $HOME/.kube/config
 kubectl taint nodes --all node-role.kubernetes.io/master-
 kubectl apply -f https://docs.projectcalico.org/v3.8/manifests/calico.yaml
+kubectl apply -f https://raw.githubusercontent.com/coreos/flannel/62e44c867a2846fefb68bd5f178daf4da3095ccb/Documentation/kube-flannel.yml
