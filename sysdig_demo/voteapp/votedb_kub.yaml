@@ -1,0 +1,53 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: votedb
+  namespace: voteapp
+  labels:
+    app: votedb
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: votedb
+  template:
+    metadata:
+      labels:
+        app: votedb
+    spec:
+      containers:
+        - name: votedb
+          image: docker.io/giriraj789/votedb:latest
+          imagePullPolicy: IfNotPresent
+          resources:
+            requests:
+              memory: "100Mi"
+              cpu: "200m"
+            limits:
+              memory: "500Mi"
+              cpu: "300m"
+          ports:
+          - containerPort: 3306
+          env:
+          - name: DB_NAME
+            value: vote_db
+          - name: DB_PASSWD
+            value: india@123
+          - name: DB_USER
+            value: root
+          - name: DB_ADDR
+            value: votedb
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: votedb
+  namespace: voteapp
+spec:
+  selector:
+    app: votedb
+  type: NodePort
+  ports:
+    - protocol: TCP
+      port: 3306
+      nodePort: 32300
