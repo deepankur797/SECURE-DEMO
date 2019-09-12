@@ -8,3 +8,5 @@ oc adm policy add-cluster-role-to-user cluster-reader -n sysdig-agent -z sysdig-
 kubectl create secret generic sysdig-agent --from-literal=access-key=1982d83d2827-e01c-484f-b94e-99dedbafab34 -n sysdig-agent
 #kubectl apply -f sysdig-agent-configmap.yaml -n sysdig-agent
 #kubectl apply -f sysdig-agent-daemonset-v2.yaml -n sysdig-agent
+#docker save docker.io/sysdig/agent:latest > sysdigagent.tar
+#docker load < sysdigagent.tar
