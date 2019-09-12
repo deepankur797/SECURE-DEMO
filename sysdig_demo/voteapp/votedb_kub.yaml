@@ -46,8 +46,8 @@ metadata:
 spec:
   selector:
     app: votedb
-  type: NodePort
+  type: ClusterIP
   ports:
     - protocol: TCP
       port: 3306
-      nodePort: 32300
+      targetPort: 3306

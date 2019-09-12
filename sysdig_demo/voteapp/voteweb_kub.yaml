@@ -50,4 +50,4 @@ spec:
   ports:
     - protocol: TCP
       port: 8080
-      nodePort: 32700
+      nodePort: 32300

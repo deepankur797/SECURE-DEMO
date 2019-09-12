@@ -1,0 +1,5 @@
+File name = /lib/systemd/system/docker.service
+Line : /usr/bin/dockerd -H fd:// --containerd=/run/containerd/containerd.sock -H tcp://0.0.0.0:2375
+systemctl daemon-reload 
+systemctl restart docker
+
