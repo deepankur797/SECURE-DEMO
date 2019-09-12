@@ -24,11 +24,6 @@ data:
 
     #######################################
     new_k8s: true
-    k8s_cluster_name: kubernetes140
+    k8s_cluster_name: giriproduction
     prometheus:
         enabled: true
-    chisels:
-      - name: logwatcher
-        args:
-          filespattern: /var/lib/docker/containers/b16772be0eeac3c1a0cdf5abd172d547014e8fb76855844c94a6651d97375f18/b16772be0eeac3c1a0cdf5abd172d547014e8fb76855844c94a6651d97375f18-json.log
-          term: access

@@ -111,3 +111,4 @@ spec:
         - mountPath: /host/etc/os-release
           name: osrel
           readOnly: true
+
