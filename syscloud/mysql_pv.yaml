@@ -5,11 +5,11 @@ metadata:
   namespace: kube-system
 spec:
   accessModes:
-  - ReadWriteMany
+  - ReadWriteOnce
   capacity:
     storage: 15Gi
   nfs:
-    path: /opt/share/mysql
-    server: 192.168.54.140
+    path: /var/nfsshare/pv01
+    server: 10.1.150.157
   persistentVolumeReclaimPolicy: Retain
-  storageClassName: mysql-storage
+  storageClassName: mysqlclass
