@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: cassandra-pv02
+  namespace: kube-system
+spec:
+  accessModes:
+  - ReadWriteOnce
+  capacity:
+    storage: 50Gi
+  nfs:
+    path: /var/nfsshare/pv03
+    server: 192.168.1.22
+  persistentVolumeReclaimPolicy: Retain
+  storageClassName: cassandraclass
