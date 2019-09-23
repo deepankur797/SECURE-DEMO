@@ -24,7 +24,7 @@ kubeadm init --pod-network-cidr=192.168.0.0/16 --apiserver-bind-port=6444 > /kub
 kubectl apply -f https://docs.projectcalico.org/v3.8/manifests/calico.yaml
 Flannel
 kubeadm init --pod-network-cidr=10.244.0.0/16 --apiserver-bind-port=6444 > /kube_join.txt
-kubectl apply -f https://raw.githubusercontent.com/coreos/flannel/62e44c867a2846fefb68bd5f178daf4da3095ccb/Documentation/kube-flannel.yml
+kubectl apply -f https://raw.githubusercontent.com/coreos/flannel/32a765fd19ba45b387fdc5e3812c41fff47cfd55/Documentation/kube-flannel.yml
 mkdir -p $HOME/.kube && cp -i /etc/kubernetes/admin.conf $HOME/.kube/config && sudo chown $(id -u):$(id -g) $HOME/.kube/config
 kubectl taint nodes --all node-role.kubernetes.io/master-
 kubectl apply -f https://docs.projectcalico.org/v3.8/manifests/calico.yaml
@@ -57,7 +57,7 @@ yum install -y kubelet kubeadm kubectl --disableexcludes=kubernetes
 systemctl enable --now kubelet   
     
     
-firewall-cmd --permanent --add-port=6443/tcp
+firewall-cmd --permanent --add-port=6444/tcp
 firewall-cmd --permanent --add-port=2379-2380/tcp
 firewall-cmd --permanent --add-port=10250/tcp
 firewall-cmd --permanent --add-port=10251/tcp
@@ -80,5 +80,32 @@ kubectl create namespace sysdigcloud
  1015  kubectl -n sysdigcloud create secret tls sysdigcloud-ssl-secret --cert=server.crt --key=server.key
  1016  kubectl -n sysdigcloud create secret tls sysdigcloud-ssl-secret-collector --cert=collector.crt --key=collector.key
  1017  kubectl -n sysdigcloud apply -f datastores/as_kubernetes_pods/manifests/redis/redis-deployment.yaml
+
+
+/usr/lib/systemd/system/kubelet.service.d/
+
+
+
+
+
+
+Centos7
+setenforce 0
+sed -i 's/^SELINUX=enforcing$/SELINUX=permissive/' /etc/selinux/config
+
+yum install -y kubelet kubeadm kubectl --disableexcludes=kubernetes
+
+systemctl enable --now kubelet
+
+
+cat <<EOF >  /etc/sysctl.d/k8s.conf
+net.bridge.bridge-nf-call-ip6tables = 1
+net.bridge.bridge-nf-call-iptables = 1
+EOF
+sysctl --system
+
+lsmod | grep br_netfilter
+modprobe br_netfilter
+
 
 
