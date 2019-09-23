@@ -69,3 +69,16 @@ echo '1' > /proc/sys/net/bridge/bridge-nf-call-iptables
 
 iptables -F && iptables -t nat -F && iptables -t mangle -F && iptables -X
 
+
+
+kubectl create namespace sysdigcloud
+ 1010  kubectl -n sysdigcloud apply -f sysdigcloud/config.yaml
+ 1011  kubectl -n sysdigcloud apply -f sysdigcloud/scanning-secrets.yaml
+ 1012  kubectl -n sysdigcloud apply -f sysdigcloud/anchore-secrets.yaml
+ 1013  kubectl -n sysdigcloud apply -f sysdigcloud/pull-secret.yaml
+ 1014  ls
+ 1015  kubectl -n sysdigcloud create secret tls sysdigcloud-ssl-secret --cert=server.crt --key=server.key
+ 1016  kubectl -n sysdigcloud create secret tls sysdigcloud-ssl-secret-collector --cert=collector.crt --key=collector.key
+ 1017  kubectl -n sysdigcloud apply -f datastores/as_kubernetes_pods/manifests/redis/redis-deployment.yaml
+
+
