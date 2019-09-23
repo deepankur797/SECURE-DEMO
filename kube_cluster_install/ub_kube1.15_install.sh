@@ -108,4 +108,25 @@ lsmod | grep br_netfilter
 modprobe br_netfilter
 
 
+{
+  "name": "cbr0",
+  "cniVersion":"0.3.1",
+  "plugins": [
+    {
+      "type": "flannel",
+      "delegate": {
+        "hairpinMode": true,
+        "isDefaultGateway": true
+      }
+    },
+    {
+      "type": "portmap",
+      "capabilities": {
+        "portMappings": true
+      }
+    }
+  ]
+}
+~  
+
 
