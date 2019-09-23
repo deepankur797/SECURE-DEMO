@@ -67,3 +67,5 @@ firewall-cmd --reload
 modprobe br_netfilter
 echo '1' > /proc/sys/net/bridge/bridge-nf-call-iptables
 
+iptables -F && iptables -t nat -F && iptables -t mangle -F && iptables -X
+
