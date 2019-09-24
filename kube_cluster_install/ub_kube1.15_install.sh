@@ -127,5 +127,5 @@ modprobe br_netfilter
   ]
 }
 ~  
-
+kubectl create clusterrolebinding owner-cluster-admin-binding --clusterrole cluster-admin --user system:serviceaccount:sysdigcloud:ingress-controller
 
